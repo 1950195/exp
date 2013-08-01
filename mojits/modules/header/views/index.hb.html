@@ -1,0 +1,35 @@
+<header id="{{mojit_view_id}}" class="header">
+    <div class="header-bd">
+        {{#favorite}}<ul class="header-bd-l">
+            {{#links}}<li class="header-favorite">
+                <a href="{{href}}">{{content}}</a>
+            </li>{{/links}}
+        </ul>{{/favorite}}
+        {{#shortcuts}}<ul class="header-bd-r">
+            {{#userinfo}}<li class="header-userinfo">
+                <span>{{message}}</span>
+                {{#links}}<a href="{{href}}">{{content}}</a>{{/links}}
+            </li>{{/userinfo}}
+            {{#navigate}}{{#links}}<li class="header-navigate">
+                <a href="{{href}}">{{content}}</a>
+                {{#single_drop_down}}<ul class="header-single-drop-down hide">
+                    {{#links}}<li>
+                        <a href="{{href}}">{{content}}</a>
+                    </li>{{/links}}
+                </ul>{{/single_drop_down}}
+                {{#multi_drop_down}}<div class="header-multi-drop-down hide">
+                    {{#children}}<dl>
+                        <dt>{{title}}</dt>
+                        <dd>
+                            <ul>
+                                {{#links}}<li>
+                                    <a href="{{href}}">{{content}}</a>
+                                </li>{{/links}}
+                            </ul>
+                        </dd>
+                    </dl>{{/children}}
+                </div>{{/multi_drop_down}}
+            </li>{{/links}}{{/navigate}}
+        </ul>{{/shortcuts}}
+    </div>
+</header>

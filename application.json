@@ -2,7 +2,8 @@
     {
         "settings": ["master"],
         "mojitsDirs": [
-            "mojits/pages"
+            "mojits/pages",
+            "mojits/modules"
         ],
         "staticHandling": {
             "appName": "/"

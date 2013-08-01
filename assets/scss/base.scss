@@ -1,0 +1,25 @@
+@import "compass/reset";
+@import "compass/typography";
+@import "compass/utilities";
+
+$icons-layout: smart;
+$icons-sprite-dimensions: true;
+
+@mixin base-before-after-box($pos: both) {
+    position: relative;
+    @if $pos == both or $pos == before {
+        &:before {
+            content: "";
+            position: absolute;
+        }
+    } else {
+        &:after {
+            content: "";
+            position: absolute;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "settings": [ "master" ],
+        "config": {
+            "children": {
+                "header": {
+                    "type": "header"
+                }
+            },
+            "assets": {
+                "top": {
+                    "css": [
+                        "/static/assets/css/homepage.css"
+                    ]
+                }
+            }
+        }
+    }
+]

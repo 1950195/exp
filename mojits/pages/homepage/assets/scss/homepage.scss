@@ -1,0 +1,17 @@
+@import "base";
+@import "icons/*.png";
+@import "header";
+
+body {
+    font: 12px/150% Verdana,"\5b8b\4f53";
+    color: #333;
+    a {
+        color: #333;
+        &:link, &:visited {
+            color: #333;
+        }
+        &:hover {
+            color: #c00;
+        }
+    }
+}
