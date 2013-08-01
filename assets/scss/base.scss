@@ -1,6 +1,7 @@
 @import "compass/reset";
 @import "compass/typography";
 @import "compass/utilities";
+@import "compass/css3";
 
 $icons-layout: smart;
 $icons-sprite-dimensions: true;
@@ -12,7 +13,8 @@ $icons-sprite-dimensions: true;
             content: "";
             position: absolute;
         }
-    } else {
+    }
+    @if $pos == both or $pos == after {
         &:after {
             content: "";
             position: absolute;

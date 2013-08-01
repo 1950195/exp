@@ -4,17 +4,15 @@ YUI.add('headerBinderIndex', function(Y, NAME) {
     var dropdownSelector = '.header-single-drop-down, .header-multi-drop-down',
         navigateDropdown = function(node) {
             node.delegate('hover', function(e) {
-                var dropdownObj = this.one(dropdownSelector);
-                if (!dropdownObj) {
+                if (!this.one(dropdownSelector)) {
                     return;
                 }
-                dropdownObj.removeClass('hide');
+                this.addClass('hover');
             }, function(e) {
-                var dropdownObj = this.one(dropdownSelector);
-                if (!dropdownObj) {
+                if (!this.one(dropdownSelector)) {
                     return;
                 }
-                dropdownObj.addClass('hide');
+                this.removeClass('hover');
             }, '.header-navigate');
         };
     Y.namespace('mojito.binders')[NAME] = {

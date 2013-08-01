@@ -12,12 +12,12 @@
             </li>{{/userinfo}}
             {{#navigate}}{{#links}}<li class="header-navigate">
                 <a href="{{href}}">{{content}}</a>
-                {{#single_drop_down}}<ul class="header-single-drop-down hide">
+                {{#single_drop_down}}<ul class="header-single-drop-down">
                     {{#links}}<li>
                         <a href="{{href}}">{{content}}</a>
                     </li>{{/links}}
                 </ul>{{/single_drop_down}}
-                {{#multi_drop_down}}<div class="header-multi-drop-down hide">
+                {{#multi_drop_down}}<div class="header-multi-drop-down">
                     {{#children}}<dl>
                         <dt>{{title}}</dt>
                         <dd>
