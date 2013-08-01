@@ -100,6 +100,10 @@ var SampleApp = function() {
             res.send('1');
         };
 
+        self.routes['/v'] = function(req, res) {
+            res.send(process.version);
+        };
+
         self.routes['/asciimo'] = function(req, res) {
             var link = "http://i.imgur.com/kmbjB.png";
             res.send("<html><body><img src='" + link + "'></body></html>");
