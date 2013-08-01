@@ -1,0 +1,15 @@
+[
+    {
+        "settings": ["master"],
+        "homepage": {
+            "path": "/",
+            "verbs": ["get"],
+            "call": "homepage.index"
+        },
+        "envpage": {
+            "path": "/env",
+            "verbs": ["get"],
+            "call": "envpage.index"
+        }
+    }
+]

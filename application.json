@@ -1,0 +1,33 @@
+[
+    {
+        "settings": ["master"],
+        "mojitsDirs": [
+            "mojits/pages"
+        ],
+        "staticHandling": {
+            "appName": "/"
+        },
+        "specs": {
+            "homepage": {
+                "type": "homepage"
+            },
+            "envpage": {
+                "type": "envpage"
+            }
+        },
+        "yui": {
+            "config": {
+                "debug": false
+            }
+        }
+    },
+    {
+        "settings": ["environment:dev"],
+        "yui": {
+            "config": {
+                "debug": true,
+                "logLevel": "debug"
+            }
+        }
+    }
+]
