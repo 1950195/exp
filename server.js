@@ -101,7 +101,17 @@ var SampleApp = function() {
         };
 
         self.routes['/v'] = function(req, res) {
-            res.send(process.version);
+            var content = 'Version: ' + process.version + '\n<br/>\n' +
+                'Env: {<br/>\n<pre>';
+            //  Add env entries.
+            for (var k in process.env) {
+                content += '   ' + k + ': ' + process.env[k] + '\n';
+            }
+            content += '}\n</pre><br/>\n'
+                res.send(content);
+            res.send('<html>\n' +
+                    '  <head><title>Node.js Process Env</title></head>\n' +
+                    '  <body>\n<br/>\n' + content + '</body>\n</html>');
         };
 
         self.routes['/asciimo'] = function(req, res) {
