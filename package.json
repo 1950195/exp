@@ -24,5 +24,5 @@
   "devDependencies": {},
   "bundleDependencies": [],
   "private": true,
-  "scripts": {"start": "cd  && supervisor -n error -e 'js|json|html' /var/lib/openshift/51f9c1c750044671ed0001ea/app-root/repo/server.js"}
+  "scripts": {"start": "supervisor -n error -e 'js|json|html' /var/lib/openshift/51f9c1c750044671ed0001ea/app-root/repo/server.js"}
 }
