@@ -24,5 +24,8 @@
                 "debug": false 
             }
         }
+    },
+    {
+        "settings": ["environment:dev"]
     }
 ]
