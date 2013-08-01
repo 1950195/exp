@@ -14,19 +14,14 @@
             "envpage": {
                 "type": "envpage"
             }
-        },
-        "yui": {
-            "config": {
-                "debug": false
-            }
         }
     },
     {
-        "settings": ["environment:dev"],
+        "settings": ["environment:production"],
+        "appPort": 8080,
         "yui": {
             "config": {
-                "debug": true,
-                "logLevel": "debug"
+                "debug": false 
             }
         }
     }
