@@ -15,18 +15,18 @@ $ supervisor -n error server.js
 ```
 ## How to use compass
 ```bash
-$ compass watch --config .compass-ctrl/homepage.config.rb --trace
+$ compass watch --config .compass/homepage.config.rb --trace
 ```
 or
 ```bash
-$ cd .compass-ctrl && compass watch --config homepage.config.rb --trace
+$ cd .compass && compass watch --config homepage.config.rb --trace
 ```
 compass with production environment, it will be compressed
 ```bash
-$ compass compile --config .compass-ctrl/homepage.config.rb -e production --force
+$ compass compile --config .compass/homepage.config.rb -e production --force
 ```
 ### how to use compass auto create css sprites
-*  edit .compass-ctrl/homepage.config.rb, append these two lines code
+*  edit .compass/homepage.config.rb, append these two lines code
 
 ```ruby
 images_dir = "assets/images"
