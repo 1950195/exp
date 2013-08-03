@@ -3,7 +3,7 @@
 YUI.add('handlebars-exp', function(Y, Name) {
     var attrsGen    = function(hash) {
             return ' ' + Y.Object.keys(hash).map(function(key) {
-                return key + '="' + hash[key] + '"';
+                return hash[key] ? key + '="' + hash[key] + '"' : '';
             }).join(' ');
         },
         linkHelper = function(text, options) {
