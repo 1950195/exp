@@ -1,5 +1,6 @@
 node_modules/
 .sass-cache/
+deplist.txt
 .DS_Store
 *.swp
 *.swo
