@@ -14,9 +14,26 @@ YUI.add('handlebars-exp', function(Y, Name) {
             return '<ul' + attrsGen(options.hash) + '>' + context.map(function(item) {
                 return '<li>' + options.fn(item) + '</li>';
             }).join('\n') + '</ul>';
+        },
+        singleDropdownHelper = listHelper,
+        multiDropdownHelper = function(context, options) {
+            Y.log(context);
+            return '<div' + attrsGen(options.hash) + '>' + context.map(function(item) {
+                return '<dl><dt>' + item.title + '</dt><dd>' + options.fn(item) + '</dd></dl>';
+            }).join('\n') + '</div>';
         };
     Y.namespace('Handlerbars.Exp').init = function(helpers) {
-        helpers.set('link', linkHelper);
-        helpers.set('list', listHelper);
+        var registerHelper = function(block, helper) {
+            return helpers.set(block, function(context, options) {
+                if (context) {
+                    return helper(context, options);
+                }
+                return '';
+            });
+        };
+        registerHelper('link', linkHelper);
+        registerHelper('list', listHelper);
+        registerHelper('single_dropdown', singleDropdownHelper);
+        registerHelper('multi_dropdown', multiDropdownHelper);
     };
 }, '0.0.1', {requires: []});

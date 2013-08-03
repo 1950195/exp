@@ -73,11 +73,11 @@
                             overflow: hidden;
                             background: #fff;
                         }
-                        .header-single-drop-down,  .header-multi-drop-down {
+                        .header-single-dropdown,  .header-multi-dropdown {
                             display: block;
                         }
                     }
-                    .header-single-drop-down,  .header-multi-drop-down {
+                    .header-single-dropdown,  .header-multi-dropdown {
                         display: none;
                         position: absolute;
                         border: 1px solid #ddd;
@@ -91,7 +91,8 @@
                             line-height: 22px;
                         }
                     }
-                    .header-multi-drop-down {
+                    .header-multi-dropdown {
+                        //display: block;
                         dl {
                             @include float-left;
                         }

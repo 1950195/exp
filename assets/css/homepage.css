@@ -194,11 +194,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: #fff;
 }
 /* line 76, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate > li.hover .header-single-drop-down, .header .header-bd .header-bd-r .header-navigate > li.hover .header-multi-drop-down {
+.header .header-bd .header-bd-r .header-navigate > li.hover .header-single-dropdown, .header .header-bd .header-bd-r .header-navigate > li.hover .header-multi-dropdown {
   display: block;
 }
 /* line 80, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate > li .header-single-drop-down, .header .header-bd .header-bd-r .header-navigate > li .header-multi-drop-down {
+.header .header-bd .header-bd-r .header-navigate > li .header-single-dropdown, .header .header-bd .header-bd-r .header-navigate > li .header-multi-dropdown {
   display: none;
   position: absolute;
   border: 1px solid #ddd;
@@ -211,12 +211,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: -1;
 }
 /* line 89, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate > li .header-single-drop-down li, .header .header-bd .header-bd-r .header-navigate > li .header-multi-drop-down li {
+.header .header-bd .header-bd-r .header-navigate > li .header-single-dropdown li, .header .header-bd .header-bd-r .header-navigate > li .header-multi-dropdown li {
   padding: 0 6px;
   line-height: 22px;
 }
-/* line 95, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate > li .header-multi-drop-down dl {
+/* line 94, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li .header-multi-dropdown {
+  display: block;
+}
+/* line 96, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li .header-multi-dropdown dl {
   display: inline;
   float: left;
 }

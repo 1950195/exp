@@ -5,29 +5,7 @@
         </div>
         <div class="header-bd-r">
             {{> userinfo}}
-            <ul class="header-navigate">
-               {{#navigate}}{{#mainmenu}}<li>
-                {{#if href}}<a href="{{../href}}">{{../content}}</a>
-                {{else}}<span>{{../content}}</span>{{/if}}
-                {{#single_drop_down}}<ul class="header-single-drop-down">
-                    {{#links}}<li>
-                        <a href="{{href}}">{{content}}</a>
-                    </li>{{/links}}
-                </ul>{{/single_drop_down}}
-                {{#multi_drop_down}}<div class="header-multi-drop-down">
-                    {{#children}}<dl>
-                        <dt>{{title}}</dt>
-                        <dd>
-                            <ul>
-                                {{#links}}<li>
-                                    <a href="{{href}}">{{content}}</a>
-                                </li>{{/links}}
-                            </ul>
-                        </dd>
-                    </dl>{{/children}}
-                </div>{{/multi_drop_down}}
-            </li>{{/mainmenu}}{{/navigate}}
-        </ul>
+            {{> navigate}}
         </div>
     </div>
 </header>
