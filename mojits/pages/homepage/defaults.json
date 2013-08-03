@@ -5,6 +5,9 @@
             "children": {
                 "header": {
                     "type": "header"
+                },
+                "toptic": {
+                    "type": "toptic"
                 }
             },
             "assets": {

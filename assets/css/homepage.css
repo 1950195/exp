@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 42, icons/*.png */
-.icons-sprite, .header .header-bd .header-bd-l .header-favorite a:before {
+.icons-sprite, .header .header-bd .header-bd-l .header-favorite li a:before {
   background: url('/static/assets/images/icons-scea409d063.png') no-repeat;
 }
 
@@ -105,65 +105,86 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline;
   float: left;
 }
-/* line 21, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-l .header-favorite {
+/* line 22, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-l .header-favorite li {
   padding-left: 16px;
 }
-/* line 23, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-l .header-favorite a {
+/* line 24, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-l .header-favorite li a {
   position: relative;
 }
 /* line 12, ../scss/base.scss */
-.header .header-bd .header-bd-l .header-favorite a:before {
+.header .header-bd .header-bd-l .header-favorite li a:before {
   content: "";
   position: absolute;
 }
-/* line 25, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-l .header-favorite a:before {
+/* line 26, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-l .header-favorite li a:before {
   top: 1px;
   left: -16px;
   background-position: 0 0;
   height: 13px;
   width: 13px;
 }
-/* line 33, ../../mojits/modules/header/assets/scss/header.scss */
+/* line 35, ../../mojits/modules/header/assets/scss/header.scss */
 .header .header-bd .header-bd-r {
   display: inline;
   float: right;
 }
-/* line 36, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-userinfo a {
+/* line 37, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-userinfo {
+  display: inline;
+  float: left;
+  height: 30px;
+  padding: 0 11px 0 12px;
+}
+/* line 41, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-userinfo > li {
+  display: inline;
+  float: left;
+}
+/* line 43, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-userinfo > li a {
   margin-left: 5px;
 }
-/* line 40, ../../mojits/modules/header/assets/scss/header.scss */
+/* line 48, ../../mojits/modules/header/assets/scss/header.scss */
 .header .header-bd .header-bd-r .header-navigate {
+  display: inline;
+  float: left;
+}
+/* line 50, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li {
+  display: inline;
+  float: left;
+  height: 30px;
+  padding: 0 11px 0 12px;
   position: relative;
   z-index: 10;
 }
-/* line 43, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate > a {
+/* line 56, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li > a, .header .header-bd .header-bd-r .header-navigate > li > span {
   position: relative;
 }
 /* line 12, ../scss/base.scss */
-.header .header-bd .header-bd-r .header-navigate > a:before {
+.header .header-bd .header-bd-r .header-navigate > li > a:before, .header .header-bd .header-bd-r .header-navigate > li > span:before {
   content: "";
   position: absolute;
 }
 /* line 18, ../scss/base.scss */
-.header .header-bd .header-bd-r .header-navigate > a:after {
+.header .header-bd .header-bd-r .header-navigate > li > a:after, .header .header-bd .header-bd-r .header-navigate > li > span:after {
   content: "";
   position: absolute;
 }
-/* line 45, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate > a:before {
+/* line 58, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li > a:before, .header .header-bd .header-bd-r .header-navigate > li > span:before {
   top: 1px;
   left: -12px;
   height: 13px;
   width: 1px;
   background-color: #DDD;
 }
-/* line 54, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate.hover > a:after {
+/* line 67, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li.hover > a:after {
   z-index: 1;
   top: 25px;
   left: 6px;
@@ -172,12 +193,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   overflow: hidden;
   background: #fff;
 }
-/* line 63, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate.hover .header-single-drop-down, .header .header-bd .header-bd-r .header-navigate.hover .header-multi-drop-down {
+/* line 76, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li.hover .header-single-drop-down, .header .header-bd .header-bd-r .header-navigate > li.hover .header-multi-drop-down {
   display: block;
 }
-/* line 67, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate .header-single-drop-down, .header .header-bd .header-bd-r .header-navigate .header-multi-drop-down {
+/* line 80, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li .header-single-drop-down, .header .header-bd .header-bd-r .header-navigate > li .header-multi-drop-down {
   display: none;
   position: absolute;
   border: 1px solid #ddd;
@@ -189,17 +210,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 30px;
   z-index: -1;
 }
-/* line 76, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate .header-single-drop-down li, .header .header-bd .header-bd-r .header-navigate .header-multi-drop-down li {
+/* line 89, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li .header-single-drop-down li, .header .header-bd .header-bd-r .header-navigate > li .header-multi-drop-down li {
   padding: 0 6px;
   line-height: 22px;
 }
-/* line 81, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate .header-multi-drop-down {
-  display: block;
-}
-/* line 83, ../../mojits/modules/header/assets/scss/header.scss */
-.header .header-bd .header-bd-r .header-navigate .header-multi-drop-down dl {
+/* line 95, ../../mojits/modules/header/assets/scss/header.scss */
+.header .header-bd .header-bd-r .header-navigate > li .header-multi-drop-down dl {
   display: inline;
   float: left;
 }

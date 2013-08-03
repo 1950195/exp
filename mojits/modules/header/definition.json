@@ -2,120 +2,113 @@
     {
         "settings": [ "master" ],
         "pagedata": {
-            "favorite": {
-                "links": [
+            "favorite": [
+                {
+                    "url": "#",
+                    "text": "收藏京东"
+                }
+            ],
+            "userinfo": [
+                {
+                    "text": "您好，欢迎来到京东！"
+                }, {
+                    "url": "#",
+                    "text": "[登录]"
+                }, {
+                    "url": "#",
+                    "text": "[免费注册]"
+                }
+            ],
+            "navigate": {
+                "mainmenu": [
                     {
                         "href": "#",
-                        "content": "收藏京东"
+                        "content": "我的订单"
+                    }, {
+                        "href": "#",
+                        "content": "手机京东"
+                    }, {
+                        "content": "客户服务",
+                        "single_drop_down": {
+                            "links": [
+                                {
+                                    "href": "#",
+                                    "content": "帮助中心"
+                                }, {
+                                    "href": "#",
+                                    "content": "售后服务"
+                                }, {
+                                    "href": "#",
+                                    "content": "在线客服"
+                                }, {
+                                    "href": "#",
+                                    "content": "投诉中心"
+                                }, {
+                                    "href": "#",
+                                    "content": "客服邮箱"
+                                }
+                            ]
+                        }
+                    }, {
+                        "content": "网站导航",
+                        "multi_drop_down": {
+                            "children": [
+                                {
+                                    "title": "特色栏目",
+                                    "links": [
+                                        {
+                                            "href": "#",
+                                            "content": "为我推荐"
+                                        }, {
+                                            "href": "#",
+                                            "content": "视频购物"
+                                        }, {
+                                            "href": "#",
+                                            "content": "京东社区"
+                                        }, {
+                                            "href": "#",
+                                            "content": "校园频道"
+                                        }, {
+                                            "href": "#",
+                                            "content": "在线读书"
+                                        }, {
+                                            "href": "#",
+                                            "content": "装机大师"
+                                        }, {
+                                            "href": "#",
+                                            "content": "礼品卡"
+                                        }
+                                    ]
+                                }, {
+                                    "title": "企业服务",
+                                    "links": [
+                                        {
+                                            "href": "#",
+                                            "content": "企业客户"
+                                        }, {
+                                            "href": "#",
+                                            "content": "办公直通车"
+                                        }
+                                    ]
+                                }, {
+                                    "title": "旗下网站",
+                                    "links": [
+                                        {
+                                            "href": "#",
+                                            "content": "360TOP"
+                                        }, {
+                                            "href": "#",
+                                            "content": "迷你挑"
+                                        }, {
+                                            "href": "#",
+                                            "content": "English Site"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     }
                 ]
-            },
-            "shortcuts": {
-                "userinfo": {
-                    "message" : "您好，欢迎来到京东！",
-                    "links": [
-                        {
-                            "href": "#",
-                            "content": "[登录]"
-                        }, {
-                            "href": "#",
-                            "content": "[免费注册]"
-                        }
-                    ]
-                },
-                "navigate": {
-                    "links": [
-                        {
-                            "href": "#",
-                            "content": "我的订单"
-                        }, {
-                            "href": "#",
-                            "content": "手机京东"
-                        }, {
-                            "href": "#",
-                            "content": "客户服务",
-                            "single_drop_down": {
-                                "links": [
-                                    {
-                                        "href": "#",
-                                        "content": "帮助中心"
-                                    }, {
-                                        "href": "#",
-                                        "content": "售后服务"
-                                    }, {
-                                        "href": "#",
-                                        "content": "在线客服"
-                                    }, {
-                                        "href": "#",
-                                        "content": "投诉中心"
-                                    }, {
-                                        "href": "#",
-                                        "content": "客服邮箱"
-                                    }
-                                ]
-                            }
-                        }, {
-                            "href": "#",
-                            "content": "网站导航",
-                            "multi_drop_down": {
-                                "children": [
-                                    {
-                                        "title": "特色栏目",
-                                        "links": [
-                                            {
-                                                "href": "#",
-                                                "content": "为我推荐"
-                                            }, {
-                                                "href": "#",
-                                                "content": "视频购物"
-                                            }, {
-                                                "href": "#",
-                                                "content": "京东社区"
-                                            }, {
-                                                "href": "#",
-                                                "content": "校园频道"
-                                            }, {
-                                                "href": "#",
-                                                "content": "在线读书"
-                                            }, {
-                                                "href": "#",
-                                                "content": "装机大师"
-                                            }, {
-                                                "href": "#",
-                                                "content": "礼品卡"
-                                            }
-                                        ]
-                                    }, {
-                                        "title": "企业服务",
-                                        "links": [
-                                            {
-                                                "href": "#",
-                                                "content": "企业客户"
-                                            }, {
-                                                "href": "#",
-                                                "content": "办公直通车"
-                                            }
-                                        ]
-                                    }, {
-                                        "title": "旗下网站",
-                                        "links": [
-                                            {
-                                                "href": "#",
-                                                "content": "360TOP"
-                                            }, {
-                                                "href": "#",
-                                                "content": "迷你挑"
-                                            }, {
-                                                "href": "#",
-                                                "content": "English Site"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                }
             }
         }
     }

@@ -1,7 +1,5 @@
-Eshop by Mojito
-=============
-
 Study Mojito
+=============
 
 ## How to use supervisor
 ```bash
