@@ -13,6 +13,7 @@
             "assets": {
                 "top": {
                     "css": [
+                        "/static/assets/css/pure-min.css",
                         "/static/assets/css/homepage.css"
                     ]
                 }

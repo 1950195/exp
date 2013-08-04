@@ -28,7 +28,7 @@
                     "text": "手机京东"
                 }, {
                     "text": "客户服务",
-                    "single_dropdown": [
+                    "dropdown": [
                         {
                             "url": "#",
                             "text": "帮助中心"
@@ -48,7 +48,7 @@
                     ]
                 }, {
                     "text": "网站导航",
-                    "multi_dropdown": [
+                    "dropdown": [
                         {
                             "title": "特色栏目",
                             "links": [

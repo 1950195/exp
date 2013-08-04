@@ -6,21 +6,32 @@ YUI.add('handlebars-exp', function(Y, Name) {
                 return hash[key] ? key + '="' + hash[key] + '"' : '';
             }).join(' ');
         },
-        linkHelper = function(text, options) {
-            var tag = options.hash.href ? 'a' : 'span';
-            return '<' + tag + attrsGen(options.hash) + '>' + Y.Escape.html(text) + '</' + tag + '>';
+        linkHelper = function(context, options) {
+            var text = context,
+                tagName;
+            if (typeof context === 'object') {
+                text = context.text;
+                delete context.text;
+                options.hash = Y.merge(options.hash, context);
+            }
+            tagName = options.hash.href ? 'a' : 'span';
+            return '<' + tagName + attrsGen(options.hash) + '>' + Y.Escape.html(text) + '</' + tagName + '>';
         },
         listHelper = function(context, options) {
             return '<ul' + attrsGen(options.hash) + '>' + context.map(function(item) {
                 return '<li>' + options.fn(item) + '</li>';
             }).join('\n') + '</ul>';
         },
-        singleDropdownHelper = listHelper,
-        multiDropdownHelper = function(context, options) {
-            Y.log(context);
-            return '<div' + attrsGen(options.hash) + '>' + context.map(function(item) {
-                return '<dl><dt>' + item.title + '</dt><dd>' + options.fn(item) + '</dd></dl>';
-            }).join('\n') + '</div>';
+        dropdownHelper = function(context, options) {
+            if (context.length === 0) {
+                return '';
+            }
+            if (context[0].links) {
+                return '<ul' + attrsGen(options.hash) + '>' + context.map(function(item) {
+                    return '<li><span>' + item.title + '</span>' + options.fn(item) + '</li>';
+                }).join('\n') + '</ul>';
+            }
+            return listHelper(context, options);
         };
     Y.namespace('Handlerbars.Exp').init = function(helpers) {
         var registerHelper = function(block, helper) {
@@ -28,12 +39,12 @@ YUI.add('handlebars-exp', function(Y, Name) {
                 if (context) {
                     return helper(context, options);
                 }
+                options.hash = options.hash || {};
                 return '';
             });
         };
         registerHelper('link', linkHelper);
         registerHelper('list', listHelper);
-        registerHelper('single_dropdown', singleDropdownHelper);
-        registerHelper('multi_dropdown', multiDropdownHelper);
+        registerHelper('dropdown', dropdownHelper);
     };
 }, '0.0.1', {requires: []});

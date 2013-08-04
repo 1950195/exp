@@ -1,11 +1,11 @@
-{{#list navigate class="header-navigate"}}
-    {{{link text href=url}}}
-    {{#single_dropdown single_dropdown class="header-single-dropdown"}}
+<div id="horizontal-menu" class="header-navigate">
+    {{#list navigate id="std-menu-items" class="hide"}}
         {{{link text href=url}}}
-    {{/single_dropdown}}
-    {{#multi_dropdown multi_dropdown class="header-multi-dropdown"}}
-        {{#list links}}
+        {{#dropdown dropdown}}
             {{{link text href=url}}}
-        {{/list}}
-    {{/multi_dropdown}}
-{{/list}}
+            {{#list links}}
+                {{{link text href=url}}}
+            {{/list}}
+        {{/dropdown}}
+    {{/list}}
+</div>

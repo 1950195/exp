@@ -22,6 +22,19 @@ $icons-sprite-dimensions: true;
     }
 }
 
+@mixin pure-menu-background-color($bg-color: #fff) {
+    .pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
+        background-color: $bg-color;
+    }
+}
+
+@mixin pure-menu-box($width: 100%, $height: auto) {
+    .pure-menu.pure-menu-open {
+        width: $width;
+        height: $height;
+    }
+}
+
 .hide {
     display: none;
 }

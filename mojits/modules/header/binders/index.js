@@ -1,20 +1,13 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
 /*global YUI*/
 YUI.add('headerBinderIndex', function(Y, NAME) {
-    var dropdownSelector = '.header-single-drop-down, .header-multi-drop-down',
-        navigateDropdown = function(node) {
-            node.delegate('hover', function(e) {
-                if (!this.one(dropdownSelector)) {
-                    return;
-                }
-                this.addClass('hover');
-            }, function(e) {
-                if (!this.one(dropdownSelector)) {
-                    return;
-                }
-                this.removeClass('hover');
-            }, '.header-navigate');
-        };
+    var horizontalMenu = new Y.Menu({
+            container         : '#horizontal-menu',
+            sourceNode        : '#std-menu-items',
+            orientation       : 'horizontal',
+            hideOnOutsideClick: false,
+            hideOnClick       : false
+        });
     Y.namespace('mojito.binders')[NAME] = {
         init: function(mojitProxy) {
             this.mojitProxy = mojitProxy;
@@ -22,7 +15,8 @@ YUI.add('headerBinderIndex', function(Y, NAME) {
         bind: function(node) {
             var me = this;
             this.node = node;
-            navigateDropdown(node);
+            horizontalMenu.render();
+            horizontalMenu.show();
         }
     };
-}, '0.0.1', {requires: ['event-hover', 'mojito-client']});
+}, '0.0.1', {requires: ['event-hover', 'mojito-client', 'gallery-sm-menu']});

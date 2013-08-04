@@ -27,6 +27,11 @@
         }
     },
     {
-        "settings": ["environment:dev"]
+        "settings": ["runtime:client"],
+        "yui": {
+            "config": {
+                "classNamePrefix": "pure"
+            }
+        }
     }
 ]
