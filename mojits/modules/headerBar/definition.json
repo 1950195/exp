@@ -27,8 +27,8 @@
                     "url": "#",
                     "text": "手机京东"
                 }, {
-                    "text": "客户服务",
-                    "dropdown": [
+                    "title": "客户服务",
+                    "list": [
                         {
                             "url": "#",
                             "text": "帮助中心"
@@ -47,11 +47,11 @@
                         }
                     ]
                 }, {
-                    "text": "网站导航",
-                    "dropdown": [
+                    "title": "网站导航",
+                    "list": [
                         {
                             "title": "特色栏目",
-                            "links": [
+                            "list": [
                                 {
                                     "url": "#",
                                     "text": "为我推荐"
@@ -77,7 +77,7 @@
                             ]
                         }, {
                             "title": "企业服务",
-                            "links": [
+                            "list": [
                                 {
                                     "url": "#",
                                     "text": "企业客户"
@@ -88,7 +88,7 @@
                             ]
                         }, {
                             "title": "旗下网站",
-                            "links": [
+                            "list": [
                                 {
                                     "url": "#",
                                     "text": "360TOP"

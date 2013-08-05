@@ -1,16 +1,14 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
 /*global YUI*/
-YUI.add('header', function(Y, NAME) {
+YUI.add('headerBar', function(Y, NAME) {
     Y.namespace('mojito.controllers')[NAME] = {
         index: function(ac) {
-            Y.frameExec.done(ac, {}, {});
+            Y.Handlerbars.Exp.init(ac.helpers);
+            ac.done(ac.config.getDefinition('pagedata'));
         }
     };
 }, '0.0.1', {requires: [
-    'mojito-assets-addon',
-    'mojito-deploy-addon',
     'mojito-config-addon',
-    'mojito-composite-addon',
-    'mojito-models-addon',
-    'frame-exec'
+    'mojito-helpers-addon',
+    'handlebars-exp'
 ]});

@@ -1,6 +1,6 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
 /*global YUI*/
-YUI.add('headerBinderIndex', function(Y, NAME) {
+YUI.add('headerBarBinderIndex', function(Y, NAME) {
     var horizontalMenu = new Y.Menu({
             container         : '#horizontal-menu',
             sourceNode        : '#std-menu-items',
@@ -19,4 +19,7 @@ YUI.add('headerBinderIndex', function(Y, NAME) {
             horizontalMenu.show();
         }
     };
-}, '0.0.1', {requires: ['event-hover', 'mojito-client', 'gallery-sm-menu']});
+}, '0.0.1', {requires: [
+    'mojito-client',
+    'gallery-sm-menu'
+]});
