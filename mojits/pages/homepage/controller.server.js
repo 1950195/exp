@@ -3,20 +3,14 @@
 YUI.add('homepage', function(Y, NAME) {
     Y.namespace('mojito.controllers')[NAME] = {
         index: function(ac) {
-            ac.composite.execute(ac.config.get(), function(data, meta) {
-                ac.assets.addAssets(meta.assets);
-                ac.deploy.constructMojitoClientRuntime(ac.assets, meta.binders);
-                ac.done(
-                    Y.merge(
-                        data,
-                        ac.assets.renderLocations(),
-                        ac.models.get('homepageModel').getData(),
-                        {
-                            'title': 'homepage'
-                        }
-                    )
-                );
-            });
+            Y.frameExec.done(
+                ac,
+                Y.merge(
+                    ac.models.get('homepageModel').getData(),
+                    {'title': 'homepage'}
+                ),
+                {}
+            );
         }
     };
 }, '0.1.0', {requires: [
@@ -25,5 +19,6 @@ YUI.add('homepage', function(Y, NAME) {
     'mojito-config-addon',
     'mojito-composite-addon',
     'mojito-models-addon',
-    'homepageModel'
+    'homepageModel',
+    'frame-exec'
 ]});
