@@ -1,0 +1,11 @@
+<div id="horizontal-menu" class="header-bar-navigate">
+    {{#list navigate id="std-menu-items" class="hide"}}
+        {{{link text href=url}}}
+        {{#dropdown dropdown}}
+            {{{link text href=url}}}
+            {{#list links}}
+                {{{link text href=url}}}
+            {{/list}}
+        {{/dropdown}}
+    {{/list}}
+</div>

@@ -2,6 +2,11 @@
     {
         "settings": ["master"],
         "config": {
+            "children": {
+                "header-bar": {
+                    "type": "headerBar"
+                }
+            }
         }
     }
 ]
