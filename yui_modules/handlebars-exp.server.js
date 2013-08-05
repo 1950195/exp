@@ -37,9 +37,9 @@ YUI.add('handlebars-exp', function(Y, Name) {
         var registerHelper = function(block, helper) {
             return helpers.set(block, function(context, options) {
                 if (context) {
+                    options.hash = options.hash || {};
                     return helper(context, options);
                 }
-                options.hash = options.hash || {};
                 return '';
             });
         };
