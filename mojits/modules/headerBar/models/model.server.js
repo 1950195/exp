@@ -1,5 +1,3 @@
-/*jslint anon:true, sloppy:true, nomen:true*/
-/*global YUI*/
 YUI.add('headerBarModel', function(Y, NAME) {
     Y.namespace('mojito.models')[NAME] = {
         getData: function(callback) {

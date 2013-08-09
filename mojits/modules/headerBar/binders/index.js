@@ -1,5 +1,3 @@
-/*jslint anon:true, sloppy:true, nomen:true*/
-/*global YUI*/
 YUI.add('headerBarBinderIndex', function(Y, NAME) {
     var horizontalMenu = new Y.Menu({
             container         : '#horizontal-menu',

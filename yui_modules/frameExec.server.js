@@ -1,5 +1,3 @@
-/*jslint anon:true, sloppy:true, nomen:true*/
-/*global YUI*/
 YUI.add('frame-exec', function(Y) {
     Y.namespace('frameExec').done = function(ac, frameData, frameMeta) {
         ac.composite.execute(ac.config.get(), function(data, meta) {

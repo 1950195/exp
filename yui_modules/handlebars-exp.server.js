@@ -1,5 +1,3 @@
-/*jslint anon:true, sloppy:true, nomen:true*/
-/*global YUI*/
 YUI.add('handlebars-exp', function(Y, Name) {
     var attrsGen    = function(hash) {
             if (!hash || hash.length === 0) {

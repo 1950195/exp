@@ -1,5 +1,3 @@
-/*jslint anon:true, sloppy:true, nomen:true*/
-/*global YUI*/
 YUI.add('envpageMojit', function(Y, NAME) {
     Y.namespace('mojito.controllers')[NAME] = {
         index: function(ac) {

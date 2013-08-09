@@ -1,5 +1,3 @@
-/*jslint anon:true, sloppy:true, nomen:true*/
-/*global YUI, process*/
 YUI.add('server-env', function(Y, Name) {
     Y.namespace('server.env').getHtml = function() {
         var k,
