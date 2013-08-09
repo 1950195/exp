@@ -1,0 +1,2 @@
+/*jslint anon: true, es5: true, forin: true, nomen: true, plusplus: true, sloppy: true*/
+/*global YUI, process, require, __dirname*/
